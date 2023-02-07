@@ -19,7 +19,7 @@ let user = {
 let userId = Symbol('userId')
 user.userId = 1
 user[userId] = 2
-
+// key는 string타입과 symbol타입 둘중하나를가진다.
 console.log(user)
 
 // 과제: user 를 iterating 해서, key 들을 출력하라.
@@ -27,7 +27,7 @@ for(let key in user) console.log(key)
 
 console.log(Object.keys(user))
 
-id1 = Symbol.for('regMo')// id가 key id1 가value
+id1 = Symbol.for('regNo')// 'regNo'가 key id1 가value
 id2 = Symbol.for('regNo')
 console.log(id1 == id2) // true
 
