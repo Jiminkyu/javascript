@@ -19,6 +19,7 @@ let user2 = {
     }
 }
 
+console.log(user)
 console.log(`${user}`)
 console.log(user > user2)
 console.log(user + 50)
