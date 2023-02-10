@@ -75,3 +75,44 @@ console.log(t, other)
 
 let {title: subject, wide=10} = options
 console.log(subject, wide)
+
+//
+let bread = {
+    size: {
+        width: 100,
+        height: 200
+    },
+    items: ['cake', 'donut'],
+    extra: true
+}
+
+// 과제: bread 에서 size와 items를 뽑아라.
+//let {size, items} = bread
+//console.log(size, items)
+
+//
+let {
+    size: {
+        width: w2,
+        height: h2
+    },
+    items: [item1, item2]
+} = bread
+
+console.log(w2, h2, item1, item2)
+
+//
+let menu = {
+    title: 'menu',
+    items: ['list', 'add'],
+    expired: 10
+}
+
+// 이런 기법 자주이용함
+function showMenu({title: t, items:[i1, i2]}) {
+    console.log(t, i1, i2)
+}
+showMenu(menu)
+//function showMenu({title, items}) {
+//    console.log(title, items)
+//}

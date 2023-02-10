@@ -184,5 +184,5 @@ console.log(totalPrice)
 // some(조건식)은 조건식을 만족하는게 잇으면 참이다.
 // every(조건식)은 조건식을 모두만족해야 참이다.
 let isExit = items.some(item => item.itemName == 'book')
-isExt = items.every(item => item.itemName == 'book')
+isExit = items.every(item => item.itemName == 'book')
 console.log(isExit)
