@@ -35,4 +35,4 @@ let chef1 = new Chef('달콤한')
 let chef2 = new Chef('매운')
 let waiter = new Waiter()
 
-waiter.order('짜장면', chef1).then(console.log)
+waiter.order('짜장면', chef1).then(food => console.log(food + ''))
