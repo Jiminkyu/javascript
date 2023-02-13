@@ -25,7 +25,7 @@ interface Animal {
 }
 
 interface Place {
-    loactionName: string
+    locationName: string
 }
 
 const animal: Item<Animal> = {
@@ -38,12 +38,12 @@ const animal: Item<Animal> = {
 const place: Item<Place> = {
     itemId: 2,
     data: {
-        loactionName: 'seoul'
+        locationName: 'seoul'
     }
 }
 
 //
-type Poduct<T> = {
+type Product<T> = {
     productId: number
     data: T
 }

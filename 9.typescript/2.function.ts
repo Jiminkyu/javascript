@@ -12,11 +12,11 @@ function add(a: number, b: number, isDouble: boolean): number {
 let result: number = add(1, 2, true)
 console.log(result)
 
-function greet(userName: string, nullable: boolean){
+function greet(userName: string, nullable?: boolean){
     if(nullable) return null
     else return `Hello, ${userName}.`
 }// return type 은 string union null 이다
 
-//let greeting = greet('cain')
-let greeting = greet('cain', true)
+let greeting = greet('cain')
+//let greeting = greet('cain', true)
 console.log(greeting)
