@@ -43,6 +43,6 @@ console.log(NaN > 0 , NaN >= 0, NaN ==0)
 
 console.log(undefined == undefined, null == null, NaN ==NaN)
 
-a == b 
+a == d
 a == 1
 1 == a
